@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HeroBackground } from "@/components/HeroBackground";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -12,16 +13,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div
-      className="relative w-full"
-      style={{
-        minHeight: "100vh",
-        backgroundImage: "url(/hero-bg.svg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    />
+    <section className="relative w-full overflow-hidden" style={{ minHeight: "100vh" }}>
+      <HeroBackground />
+    </section>
   );
 }
-
