@@ -18,15 +18,15 @@ export function HeroBackground() {
       </g>
 
       <g opacity="0.85" filter="url(#filter0_f_8304_57)">
-        <ellipse cx="1033.5" cy="1174.53" rx="181.194" ry="161.85" transform="rotate(90 1033.5 1174.53)" fill="#1DC1DD" />
+        <ellipse cx="1052.845" cy="1155.19" rx="181.195" ry="161.85" transform="rotate(90 1052.845 1155.19)" fill="#1DC1DD" />
       </g>
 
       <g opacity="0.85" filter="url(#filter1_f_8304_57)">
-        <path d="M690.41 1445.89C605.63 1430.58 480.027 1348.39 490.99 1278.11C501.953 1207.82 656.669 1103.36 741.449 1118.67C826.229 1133.98 941.206 1182.1 930.243 1252.39C919.28 1322.67 775.19 1461.2 690.41 1445.89Z" fill="#1DC1DD" />
+        <ellipse cx="636.59" cy="1294.13" rx="165.59" ry="215.08" transform="rotate(98.6 636.59 1294.13)" fill="#1DC1DD" />
       </g>
 
       <g opacity="0.85" filter="url(#filter2_f_8304_57)">
-        <ellipse cx="1146.67" cy="870.731" rx="181.194" ry="161.346" transform="rotate(90 1146.67 870.731)" fill="#1DC1DD" />
+        <ellipse cx="1166.515" cy="850.885" rx="181.195" ry="161.345" transform="rotate(90 1166.515 850.885)" fill="#1DC1DD" />
       </g>
 
       <g opacity="0.85" filter="url(#filter3_f_8304_57)">
