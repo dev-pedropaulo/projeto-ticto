@@ -5,7 +5,9 @@ https://youtu.be/Od-eroU6tGw
 ---
 
 URL da página publicada: https://projeto-ticto.vercel.app/
+
 URL do repositório GitHub: https://github.com/dev-pedropaulo/projeto-ticto
+
 URL de teste com parâmetros: https://projeto-ticto.vercel.app/?utm_source=facebook&utm_medium=cpc&utm_campaign=ebulicao2026&utm_content=card_iphone&utm_term=empresarios&sck=venda_123&src=origem_teste
 
 ---
