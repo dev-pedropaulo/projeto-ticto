@@ -21,22 +21,15 @@ export function InfoSection() {
       </p>
 
       {/* Card Promocional do iPhone */}
-      <div 
-        className="relative w-full h-[193px] rounded-lg border border-white/10 overflow-hidden flex items-center px-6 md:px-8"
-        style={{
-          background: "linear-gradient(261.47deg, rgba(255, 255, 255, 0.1) -16.3%, rgba(255, 255, 255, 0) 113.33%)"
-        }}
-      >
+      <div className="iphone-promo-card">
         {/* Texto do Card */}
-        <div className="max-w-[320px] sm:max-w-[350px] z-10">
-          <p className="font-tomato font-normal text-xl sm:text-2xl leading-[1.2] text-white">
-            Criando sua conta na plataforma, você pode concorrer a um{" "}
-            <span className="text-[#1DC1DD] font-bold">iPhone 16 Pro</span>
-          </p>
-        </div>
+        <p className="iphone-promo-text">
+          Criando sua conta na plataforma, você pode concorrer a um{" "}
+          <span className="text-[#1DC1DD] font-bold">iPhone 16 Pro</span>
+        </p>
 
         {/* Imagem do iPhone posicionada exatamente à direita */}
-        <div className="absolute right-0 bottom-0 w-[158px] h-[172px]">
+        <div className="iphone-promo-image-container">
           <Image 
             src="/iphone-promo.png" 
             alt="Promoção iPhone 16 Pro" 

@@ -146,3 +146,58 @@
     color: var(--color-foreground);
   }
 }
+
+.iphone-promo-card {
+  box-sizing: border-box;
+  background: linear-gradient(261.47deg, rgba(255, 255, 255, 0.1) -16.3%, rgba(255, 255, 255, 0) 113.33%);
+  background: linear-gradient(261.47deg, color(display-p3 1.000 1.000 1.000 / 0.1) -16.3%, color(display-p3 1.000 1.000 1.000 / 0) 113.33%);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  width: 100%;
+  max-width: 624px;
+  height: 193px;
+  overflow: hidden;
+}
+
+.iphone-promo-text {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 180px);
+  font-family: var(--font-tomato), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.iphone-promo-image-container {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  width: 130px;
+  height: 142px;
+}
+
+@media (min-width: 640px) {
+  .iphone-promo-text {
+    left: 53px;
+    top: 39px;
+    transform: none;
+    width: 350px;
+    height: 116px;
+    font-size: 24px;
+  }
+
+  .iphone-promo-image-container {
+    left: 399px;
+    top: 21px;
+    bottom: 0;
+    width: 158px;
+    height: 172px;
+  }
+}
+
