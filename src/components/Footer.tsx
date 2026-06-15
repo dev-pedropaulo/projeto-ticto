@@ -153,11 +153,18 @@ export function Footer() {
         </p>
         
         {/* Selos de Segurança */}
-        <div className="relative w-[263px] h-11 select-none">
+        <div className="flex flex-row items-center gap-4 select-none">
           <Image 
-            src="/sec-logos.png" 
-            alt="Selo Reclame Aqui e PCI Compliance" 
-            width={263} 
+            src="/reclame-aqui.png" 
+            alt="Selo Reclame Aqui - Prêmio 2024" 
+            width={98} 
+            height={44} 
+            className="object-contain"
+          />
+          <Image 
+            src="/pci-compliance.png" 
+            alt="PCI Security Standards Council" 
+            width={120} 
             height={44} 
             className="object-contain"
           />
