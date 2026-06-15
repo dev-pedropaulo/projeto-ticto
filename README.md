@@ -1,4 +1,27 @@
-# Color Beginnings 🚀
+Fiz um pequeno video compartilhando a experiência desse teste técnico: 
+
+https://youtu.be/Od-eroU6tGw
+
+---
+
+URL da página publicada: https://projeto-ticto.vercel.app/
+URL do repositório GitHub: https://github.com/dev-pedropaulo/projeto-ticto
+URL de teste com parâmetros: https://projeto-ticto.vercel.app/?utm_source=facebook&utm_medium=cpc&utm_campaign=ebulicao2026&utm_content=card_iphone&utm_term=empresarios&sck=venda_123&src=origem_teste
+
+---
+
+Video mostrando funcionamento: 
+
+https://youtu.be/ijXNaSLTd-o
+
+---
+
+Ferramentas de IA utilizadas: 
+- Lovable: Estruturação inicial e sincronização com github.
+- Antigravity: Demais alterações em códigos, utilizando modelos Gemini e Claude.
+- Gemini (chat): Planejamento + duvidas pontuais
+
+---
 
 Uma landing page otimizada de alta conversão construída com as tecnologias de ponta do ecossistema React e Next.js. O projeto foi estruturado para ser performático, semanticamente correto, acessível e integrado com ferramentas de rastreamento de leads.
 
