@@ -7,12 +7,11 @@ export function HeroBackground() {
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid slice"
     >
-      <mask id="mask0_8304_57" maskUnits="userSpaceOnUse" x="-65" y="-20" width="1570" height="2426">
-        <rect x="-65" y="-20" width="1570" height="2426" fill="black" />
+      <mask id="mask0_8304_57" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="-65" y="-20" width="1570" height="2426">
+        <rect x="-65" y="-20" width="1570" height="2426" fill="black" fillOpacity="1" />
       </mask>
 
       <g mask="url(#mask0_8304_57)">
-        <rect x="-65" y="-20" width="1570" height="2426" fill="#030712" />
         <rect x="-185" y="-20" width="1811" height="2426" fill="#030712" />
       </g>
 
