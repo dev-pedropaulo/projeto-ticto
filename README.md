@@ -1,70 +1,96 @@
 # 🚀 Projeto Ticto - Landing Page de Alta Conversão
 
-Uma landing page otimizada de alta conversão construída com as tecnologias de ponta do ecossistema React e Next.js. O projeto foi estruturado para ser performático, semanticamente correto, acessível e integrado com ferramentas avançadas de rastreamento de leads.
-
-## 🔗 Links Úteis
-
-- **🌍 Página Publicada:** [Acessar o Projeto (Vercel)](https://projeto-ticto.vercel.app/)
-- **⚙️ Teste com Parâmetros UTMs:** [Testar Rastreamento](https://projeto-ticto.vercel.app/?utm_source=facebook&utm_medium=cpc&utm_campaign=ebulicao2026&utm_content=card_iphone&utm_term=empresarios&sck=venda_123&src=origem_teste)
-- **💻 Repositório GitHub:** [dev-pedropaulo/projeto-ticto](https://github.com/dev-pedropaulo/projeto-ticto)
-
-## 🎥 Demonstrações em Vídeo
-
-- **Experiência do Teste Técnico:** [Assistir no YouTube](https://youtu.be/Od-eroU6tGw)
-- **Demonstração de Funcionamento:** [Assistir no YouTube](https://youtu.be/ijXNaSLTd-o)
+Uma landing page otimizada e de alta conversão, construída com as tecnologias de ponta do ecossistema React e Next.js. O projeto foi estruturado para ser performático, semanticamente correto, acessível e totalmente integrado com ferramentas de rastreamento de leads.
 
 ---
 
-## 🧠 Ferramentas e Inteligência Artificial
+## 🔗 Links Úteis e Demonstração
 
-Para otimizar o desenvolvimento, foram utilizadas as seguintes ferramentas de IA:
+- 🌐 **Deploy em Produção:** [projeto-ticto.vercel.app](https://projeto-ticto.vercel.app/)
+- 🧪 **Teste de Tracking (com UTMs):** [Acessar URL Parametrizada](https://projeto-ticto.vercel.app/?utm_source=facebook&utm_medium=cpc&utm_campaign=ebulicao2026&utm_content=card_iphone&utm_term=empresarios&sck=venda_123&src=origem_teste)
+- 👨‍💻 **Repositório GitHub:** [dev-pedropaulo/projeto-ticto](https://github.com/dev-pedropaulo/projeto-ticto)
 
-- **Lovable:** Utilizado para a estruturação visual inicial e sincronização contínua com o GitHub.
-- **Antigravity:** Responsável por alterações mais complexas nos códigos, utilizando os modelos Gemini e Claude em background.
-- **Google Gemini (Chat):** Utilizado para planejamento arquitetural e resolução de dúvidas pontuais de lógica e performance.
+### 📹 Vídeos de Apresentação
+- [**Pitch e Experiência do Teste Técnico**](https://youtu.be/Od-eroU6tGw) (Visão geral e considerações sobre o desenvolvimento)
+- [**Demonstração Prática**](https://youtu.be/ijXNaSLTd-o) (Mostrando o funcionamento da aplicação e integrações)
 
 ---
 
-## ⚙️ Integrações de Rastreamento e Automação
+## ⚙️ Pipeline de Dados e Rastreamento
 
-O fluxo de captação de leads foi desenhado para garantir rastreabilidade total de campanhas:
+Para garantir a captação e atribuição correta dos leads, a arquitetura de tracking foi desenhada da seguinte forma:
 
-### 📝 Yay Forms
-- Foram utilizados os **5 campos nativos de trackeamento** (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`).
-- Criação de dois **campos ocultos adicionais** para integrações específicas: `sck` e `src`.
-- **Método de incorporação no site:** Standard.
-- **Comunicação:** Utilização de Webhooks com Payload v2.
+### 📝 Yay! Forms
+- **Rastreamento:** Utilização de 5 campos nativos para UTMs (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`).
+- **Parâmetros Customizados:** Criação de dois campos ocultos (`sck` e `src`) essenciais para rastreamento de vendas.
+- **Incorporação:** Método *Standard* diretamente no Client Component.
+- **Transmissão:** Webhooks ativados utilizando o Payload v2 para envio dos dados em tempo real.
 
 ### 📊 Datacrazy
-- Criação de novos campos individuais mapeados para cada parâmetro de trackeamento recebido.
-- Configuração de uma **automação dedicada** para receber as requisições/webhooks do Yay Forms, realizar o mapeamento inteligente dos campos e processar a criação do lead no CRM.
+- **Modelagem:** Criação de novos campos individuais no banco para cada parâmetro de trackeamento recebido.
+- **Automação:** Fluxo de automação configurado para interceptar os webhooks do Yay! Forms, realizar o mapeamento (parsing) exato dos campos e executar a criação do lead no sistema.
 
 ---
 
-## 🛠️ Decisões Técnicas e Arquitetura
+## 🤖 Desenvolvimento Assistido por IA
 
-O projeto foi arquitetado com base nas seguintes decisões e justificativas técnicas:
-
-* **Next.js 15 (App Router) & React 19:**
-  * *Motivo:* O uso do App Router permite renderização híbrida. A página principal e o layout são tratados como **Server Components (RSC)** por padrão, o que minimiza a carga de JavaScript enviada ao navegador do usuário, melhorando significativamente as métricas de performance e SEO da Landing Page. *Client Components* (como o widget de formulários) são inicializados apenas sob demanda, garantindo interatividade eficiente.
-* **Tailwind CSS v4 & OKLCH Colors:**
-  * *Motivo:* O Tailwind CSS v4 foi escolhido por sua velocidade extrema no motor de build e integração nativa com CSS moderno.
-  * *Cores:* O design system utiliza o modelo de cores `oklch` no arquivo de estilos globais. Isso permite suporte nativo a displays de ampla gama de cores (*Wide Color Gamut*) e melhor consistência visual entre telas.
-* **Integração Dinâmica de Formulários:**
-  * *Motivo:* O formulário de inscrição é incorporado dinamicamente com suporte a **parâmetros de busca transitivos** (UTMs de campanhas, além de `sck` e `src` para rastreamento de vendas Ticto), permitindo a atribuição correta dos leads gerados independente da origem.
-* **Estruturação Limpa de Diretórios:**
-  * *Motivo:* Para manter a raiz do repositório limpa e apenas com arquivos de configuração (`package.json`, `tsconfig.json`, etc.), toda a pasta de rotas `app/` foi movida para dentro de `src/app/`. Isso isola todo o código-fonte desenvolvido, seguindo as melhores práticas da comunidade.
+O processo de construção utilizou o conceito de *AI-Assisted Development* para acelerar a entrega mantendo a alta qualidade do código:
+- **Lovable:** Utilizado para a estruturação visual inicial do projeto e sincronização contínua com o GitHub.
+- **Antigravity:** Refatoração, ajustes complexos e melhorias de código guiadas pelos modelos Gemini e Claude.
+- **Gemini (Chat):** Brainstorming, planejamento da arquitetura e resolução de dúvidas pontuais durante a execução.
 
 ---
 
-## 🚀 Como Executar Localmente
+## 🛠️ Decisões e Arquitetura Técnica
+
+O projeto foi arquitetado com as seguintes justificativas técnicas:
+
+* **Next.js 15 (App Router) & React 19**: O uso do App Router permite renderização híbrida. A página principal e o layout são tratados como **Server Components (RSC)** por padrão, minimizando a carga de JavaScript enviada ao navegador do usuário e maximizando métricas de performance e SEO. *Client Components* (como o widget de formulários) são inicializados apenas sob demanda.
+* **Tailwind CSS v4 & OKLCH Colors**: O Tailwind v4 foi escolhido por sua velocidade extrema no motor de build e integração nativa com CSS moderno. O design system utiliza o modelo de cores `oklch`, garantindo suporte nativo a displays de ampla gama de cores (Wide Color Gamut) e consistência visual perfeita.
+* **Estruturação de Diretórios Limpa**: Para manter a raiz do repositório organizada e restrita a arquivos de configuração (`package.json`, `tsconfig.json`, etc.), toda a pasta de rotas `app/` e componentes foi isolada dentro do diretório `src/`.
+
+---
+
+## ⚠️ Dificuldades Encontradas e Soluções (Auditoria)
+
+Durante o refinamento final e auditoria de código, os seguintes pontos de melhoria foram identificados e resolvidos:
+
+### 1. Performance: Recurso Bloqueante de Renderização (Fontes)
+* **Problema:** A fonte *Space Grotesk* estava sendo importada via `@import url(...)` no CSS global, forçando o download síncrono e prejudicando as métricas FCP e LCP no PageSpeed Insights.
+* **Solução:** Migração para o módulo nativo `next/font/google` no `layout.tsx`. O Next.js agora hospeda as fontes no build, realiza pré-carregamento assíncrono e gera variáveis CSS nativas integradas ao tema do Tailwind v4.
+
+### 2. Acessibilidade (A11y) em Leitores de Tela
+* **Problema:** Botões e links críticos do rodapé (redes sociais e lojas de aplicativos) utilizavam apenas SVG, sem texto alternativo para softwares de leitura de tela.
+* **Solução:** Implementação de atributos `aria-label` descritivos em todas as tags `<a>`. O código do rodapé também foi refatorado aplicando o princípio DRY (*Don't Repeat Yourself*), utilizando mapeamento dinâmico de listas.
+
+### 3. Semântica para SEO e Acessibilidade
+* **Problema:** As etapas do regulamento (sorteio do iPhone) estavam codificadas com `div`s genéricas, reduzindo o entendimento do fluxo por robôs de busca e motores de acessibilidade.
+* **Solução:** Reestruturação semântica do componente de Informações utilizando lista ordenada `<ol>` e `<li>`, preservando 100% da fidelidade visual original.
+
+### 4. Limpeza de Metadados Residuais
+* **Problema:** Arquivos de relatórios gerados por IAs (ex: `lovable-error-reporting.ts`) e pastas ocultas estavam poluindo a estrutura.
+* **Solução:** Exclusão física e limpeza do histórico Git desses assets não utilizados, entregando um repositório polido e "production-ready".
+
+---
+
+## 💻 Como Executar Localmente
 
 ### Pré-requisitos
 Certifique-se de ter o **Node.js** instalado em sua máquina.
 
 ### Passos para Rodar
 
-1. **Clone o Repositório:**
+1. **Clonar o Repositório**:
    ```bash
    git clone [https://github.com/dev-pedropaulo/projeto-ticto.git](https://github.com/dev-pedropaulo/projeto-ticto.git)
    cd projeto-ticto
+Instalar as Dependências:
+
+Bash
+npm install
+Iniciar o Servidor de Desenvolvimento:
+
+Bash
+npm run dev
+Acessar a Aplicação:
+Abra o seu navegador e acesse http://localhost:3000.
