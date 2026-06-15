@@ -1,18 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
+import type { Metadata } from "next";
 import { HeroBackground } from "@/components/HeroBackground";
 import { LogosBar } from "@/components/LogosBar";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Landing Page" },
-      { name: "description", content: "Landing page em construção." },
-    ],
-  }),
-  component: Index,
-});
+export const metadata: Metadata = {
+  title: "Landing Page",
+  description: "Landing page em construção.",
+};
 
-function Index() {
+export default function Page() {
   return (
     <section className="relative w-full overflow-hidden" style={{ minHeight: "100vh" }}>
       <HeroBackground />
