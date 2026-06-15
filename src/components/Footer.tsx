@@ -7,6 +7,53 @@ import {
   ArrowRight
 } from "lucide-react";
 
+const SOCIAL_LINKS = [
+  {
+    name: "Instagram",
+    href: "https://instagram.com",
+    ariaLabel: "Acesse nosso Instagram",
+    icon: <Instagram className="w-5 h-5" />,
+  },
+  {
+    name: "Youtube",
+    href: "https://youtube.com",
+    ariaLabel: "Inscreva-se no nosso canal do Youtube",
+    icon: <Youtube className="w-5 h-5" />,
+  },
+  {
+    name: "Spotify",
+    href: "https://spotify.com",
+    ariaLabel: "Ouça-nos no Spotify",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.785-8.893-.982-.336.076-.67-.138-.747-.473-.077-.337.138-.67.473-.748 3.854-.88 7.15-.506 9.82 1.13.295.178.387.563.207.866zm1.224-2.723c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.08-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.676-1.116 8.243-.574 11.346 1.332.367.226.488.707.26 1.082zm.105-2.835C14.792 8.78 9.685 8.61 6.746 9.5c-.494.15-1.01-.128-1.16-.622-.15-.494.128-1.01.622-1.16 3.385-1.027 9.02-.832 12.62 1.306.444.263.59.837.327 1.28-.263.444-.838.59-1.28.327z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Linkedin",
+    href: "https://linkedin.com",
+    ariaLabel: "Conecte-se conosco no Linkedin",
+    icon: <Linkedin className="w-5 h-5" />,
+  },
+  {
+    name: "Facebook",
+    href: "https://facebook.com",
+    ariaLabel: "Curta nossa página no Facebook",
+    icon: <Facebook className="w-5 h-5" />,
+  },
+  {
+    name: "TikTok",
+    href: "https://tiktok.com",
+    ariaLabel: "Siga-nos no TikTok",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-4.5 h-4.5">
+        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.64 4.16 1.02 1.11 2.44 1.74 3.92 1.84v3.89c-1.78-.03-3.53-.61-4.96-1.72-.12-.09-.2-.12-.38-.01v7.62c.03 2.14-.66 4.31-2 5.95-1.57 1.95-4.11 3.12-6.62 2.84-2.8-.21-5.36-2.15-6.39-4.81-.98-2.43-.72-5.33.68-7.51 1.43-2.29 4.07-3.66 6.77-3.41v3.91c-1.39-.14-2.85.34-3.79 1.39-.96 1.01-1.28 2.53-.82 3.86.43 1.34 1.77 2.36 3.19 2.42 1.45.1 2.9-.62 3.58-1.92.38-.72.48-1.55.46-2.36V.02h.02z" />
+      </svg>
+    ),
+  },
+];
+
 export function Footer() {
   return (
     <footer className="w-full bg-black select-none">
@@ -35,41 +82,18 @@ export function Footer() {
           
           {/* Redes Sociais */}
           <div className="flex flex-row items-center gap-4">
-            {/* Instagram */}
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all">
-              <Instagram className="w-5 h-5" />
-            </a>
-            
-            {/* Youtube */}
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all">
-              <Youtube className="w-5 h-5" />
-            </a>
-
-            {/* Spotify */}
-            <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all">
-              {/* Ícone customizado do Spotify */}
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.785-8.893-.982-.336.076-.67-.138-.747-.473-.077-.337.138-.67.473-.748 3.854-.88 7.15-.506 9.82 1.13.295.178.387.563.207.866zm1.224-2.723c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.08-1.182-.413.125-.847-.107-.972-.52-.125-.413.107-.847.52-.972 3.676-1.116 8.243-.574 11.346 1.332.367.226.488.707.26 1.082zm.105-2.835C14.792 8.78 9.685 8.61 6.746 9.5c-.494.15-1.01-.128-1.16-.622-.15-.494.128-1.01.622-1.16 3.385-1.027 9.02-.832 12.62 1.306.444.263.59.837.327 1.28-.263.444-.838.59-1.28.327z"/>
-              </svg>
-            </a>
-            
-            {/* Linkedin */}
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all">
-              <Linkedin className="w-5 h-5" />
-            </a>
-
-            {/* Facebook */}
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all">
-              <Facebook className="w-5 h-5" />
-            </a>
-
-            {/* TikTok */}
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all">
-              {/* Ícone customizado do TikTok */}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="w-4.5 h-4.5">
-                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.64 4.16 1.02 1.11 2.44 1.74 3.92 1.84v3.89c-1.78-.03-3.53-.61-4.96-1.72-.12-.09-.2-.12-.38-.01v7.62c.03 2.14-.66 4.31-2 5.95-1.57 1.95-4.11 3.12-6.62 2.84-2.8-.21-5.36-2.15-6.39-4.81-.98-2.43-.72-5.33.68-7.51 1.43-2.29 4.07-3.66 6.77-3.41v3.91c-1.39-.14-2.85.34-3.79 1.39-.96 1.01-1.28 2.53-.82 3.86.43 1.34 1.77 2.36 3.19 2.42 1.45.1 2.9-.62 3.58-1.92.38-.72.48-1.55.46-2.36V.02h.02z"/>
-              </svg>
-            </a>
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.ariaLabel}
+                className="w-[50.67px] h-11 border border-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all"
+              >
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
         
@@ -110,7 +134,7 @@ export function Footer() {
           {/* Lojas de Apps */}
           <div className="flex flex-row gap-4 w-full h-14">
             {/* Google Play */}
-            <a href="#" className="flex-1 h-14 hover:opacity-80 transition-opacity">
+            <a href="#" className="flex-1 h-14 hover:opacity-80 transition-opacity" aria-label="Baixar aplicativo da Ticto na Google Play Store">
               <svg width="100%" height="100%" viewBox="0 0 184 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="183" height="55" rx="27.5" stroke="white" strokeOpacity={0.2} />
                 <path d="M65.1067 18.9371V13.3371H67.6427C68.6267 13.3371 69.2827 13.7931 69.2827 14.5931C69.2827 15.2811 68.7467 15.8571 68.0987 15.9051V15.9531C68.8347 16.0011 69.4347 16.5611 69.4347 17.3451C69.4347 18.2971 68.7147 18.9371 67.6427 18.9371H65.1067ZM65.7787 18.3291H67.5387C68.3547 18.3291 68.7547 17.9931 68.7547 17.3451C68.7547 16.6971 68.3547 16.3931 67.5387 16.3931H65.7787V18.3291ZM65.7787 15.7851H67.4587C68.1707 15.7851 68.5947 15.3531 68.5947 14.7931C68.5947 14.2811 68.2027 13.9451 67.6107 13.9451H65.7787V15.7851ZM71.5554 19.0651C70.7074 19.0651 70.1314 18.6251 70.1314 17.9211C70.1314 17.1531 70.6674 16.7291 71.6274 16.7291H72.1154C72.8594 16.7291 73.2834 16.6491 73.2834 16.0891C73.2834 15.7291 73.0034 15.2411 72.0834 15.2411C71.3954 15.2411 70.8994 15.6011 70.8034 16.2331H70.1474C70.2354 15.2811 70.9874 14.6811 72.0914 14.6811C73.2434 14.6811 73.9234 16.1051V18.9371H73.3154L73.2834 17.8011H73.2514C73.0914 18.5771 72.4354 19.0651 71.5554 19.0651ZM70.8114 17.8331C70.8114 18.2571 71.0754 18.5211 71.6994 18.5211C72.6754 18.5211 73.2834 17.7691 73.2834 17.1051V16.6411H73.2514C73.1954 17.0011 72.8514 17.1611 72.1154 17.1611H71.6114C71.0994 17.1611 70.8114 17.4011 70.8114 17.8331ZM75.1627 14.8091H75.8027V18.9371H75.1627V14.8091ZM75.0507 13.6971C75.0507 13.4571 75.2427 13.2651 75.4827 13.2651C75.7227 13.2651 75.9147 13.4571 75.9147 13.6971C75.9147 13.9371 75.7227 14.1291 75.4827 14.1291C75.2427 14.1291 75.0507 13.9371 75.0507 13.6971ZM76.572 18.9371L78.156 16.8251L76.66 14.8091H77.412L77.756 15.2731C78.02 15.6411 78.284 16.0171 78.556 16.4091H78.588C78.86 16.0171 79.132 15.6331 79.404 15.2571L79.732 14.8091H80.484L78.948 16.8251L80.572 18.9371H79.828L79.34 18.2891C79.092 17.9451 78.844 17.6011 78.556 17.2331H78.556C78.3 17.6011 78.044 17.9531 77.788 18.3051L77.316 18.9371H76.572ZM82.4616 19.0651C81.6136 19.0651 81.0376 18.6251 81.0376 17.9211C81.0376 17.1531 81.5736 16.7291 82.5336 16.7291H83.0216C83.7656 16.7291 84.1896 16.6491 84.1896 16.0891C84.1896 15.7291 83.9096 15.2411 82.9896 15.2411C82.3016 15.2411 81.8056 15.6011 81.7096 16.2331H81.0536C81.1416 15.2811 81.8936 14.6811 82.9976 14.6811C84.1496 14.6811 84.8296 16.1051V18.9371H84.2216L84.1896 17.8011H84.1576C83.9976 18.5771 83.3416 19.0651 82.4616 19.0651ZM81.7176 17.8331C81.7176 18.2571 81.9816 18.5211 82.6056 18.5211C83.5816 18.5211 84.1896 17.7691 84.1896 17.1051V16.6411H84.1576C84.1016 17.0011 83.7576 17.1611 83.0216 17.1611H82.5176C82.0056 17.1611 81.7176 17.4011 81.7176 17.8331ZM86.012 18.9371V14.8091H86.628L86.652 16.0811H86.684C86.868 15.2011 87.38 14.7451 88.404 14.7451V15.3211C87.828 15.3451 87.42 15.4891 87.14 15.7691C86.788 16.1211 86.652 16.6891 86.652 17.4651V18.9371H86.012ZM91.0511 18.9371V14.8091H91.6591L91.6991 15.8251H91.7471C91.9711 15.0891 92.4911 14.6811 93.2111 14.6811C94.1071 14.6811 94.6991 15.2891 94.6991 16.1931V18.9371H94.0591V16.3451C94.0591 15.6491 93.7071 15.2731 92.9711 15.2731C92.2191 15.2731 91.6991 15.8891 91.6991 16.8091V18.9371H91.0511ZM97.0632 19.0651C96.2152 19.0651 95.6392 18.6251 95.6392 17.9211C95.6392 17.1531 96.1752 16.7291 97.1352 16.7291H97.6232C98.3672 16.7291 98.7912 16.6491 98.7912 16.0891C98.7912 15.7291 98.5112 15.2411 97.5912 15.2411C96.9032 15.2411 96.4072 15.6011 96.3112 16.2331H95.6552C95.7432 15.2811 96.4952 14.6811 97.5992 14.6811C98.7512 14.6811 99.4312 15.2091 99.4312 16.1051V18.9371H98.8232L98.7912 17.8011H98.7592C98.5992 18.5771 97.9432 19.0651 97.0632 19.0651ZM96.3192 17.8331C96.3192 18.2571 96.5832 18.5211 97.2072 18.5211C98.1832 18.5211 98.7912 17.7691 98.7912 17.1051V16.6411H98.7592C98.7032 17.0011 98.3592 17.1611 97.6232 17.1611H97.1192C96.6072 17.1611 96.3192 17.4011 96.3192 17.8331Z" fill="white" />                <g transform="translate(63.8054, 25.0425)">
@@ -154,7 +178,7 @@ export function Footer() {
             </a>
 
             {/* App Store */}
-            <a href="#" className="flex-1 h-14 hover:opacity-80 transition-opacity">
+            <a href="#" className="flex-1 h-14 hover:opacity-80 transition-opacity" aria-label="Baixar aplicativo da Ticto na Apple App Store">
               <svg width="100%" height="100%" viewBox="200 0 184 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="200.5" y="0.5" width="183" height="55" rx="27.5" stroke="white" strokeOpacity={0.2} />
                 <path d="M255.845 27.9974C255.845 27.0917 256.098 26.2036 256.546 25.4159C256.995 24.6281 257.636 23.9663 258.409 23.4919C257.918 22.7919 257.269 22.2157 256.516 21.8093C255.762 21.4029 254.923 21.1773 254.066 21.1506C252.239 20.9593 250.468 22.241 249.537 22.241C248.587 22.241 247.154 21.1696 245.61 21.2013C244.611 21.2334 243.638 21.523 242.785 22.0417C241.932 22.5605 241.229 23.2907 240.743 24.1613C238.638 27.7947 240.208 33.1346 242.224 36.0716C243.233 37.5097 244.411 39.1161 245.954 39.0592C247.463 38.9968 248.027 38.0994 249.849 38.0994C251.654 38.0994 252.183 39.0592 253.756 39.023C255.376 38.9968 256.396 37.5784 257.369 36.1267C258.094 35.1019 258.652 33.9694 259.022 32.7709C258.081 32.3741 257.278 31.7098 256.713 30.8609C256.148 30.012 255.846 29.0161 255.845 27.9974Z" fill="white" />

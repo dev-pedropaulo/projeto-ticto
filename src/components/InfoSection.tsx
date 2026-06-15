@@ -54,9 +54,9 @@ export function InfoSection() {
             Confira as regras para participar
           </span>
 
-          <div className="flex flex-col items-start gap-3.5 w-full">
+          <ol className="flex flex-col items-start gap-3.5 w-full">
             {/* Regra 1 */}
-            <div className="flex flex-row items-center gap-3.5 h-[26px]">
+            <li className="flex flex-row items-center gap-3.5 h-[26px]">
               <span className="font-space font-bold text-base text-[#1DC1DD] leading-[1.6] w-2 text-right">
                 1
               </span>
@@ -64,10 +64,10 @@ export function InfoSection() {
               <span className="font-space font-normal text-base text-white leading-[1.2]">
                 Crie sua conta no formulário ao lado
               </span>
-            </div>
+            </li>
 
             {/* Regra 2 */}
-            <div className="flex flex-row items-center gap-3.5 h-[26px]">
+            <li className="flex flex-row items-center gap-3.5 h-[26px]">
               <span className="font-space font-bold text-base text-[#1DC1DD] leading-[1.6] w-2 text-right">
                 2
               </span>
@@ -75,10 +75,10 @@ export function InfoSection() {
               <span className="font-space font-normal text-base text-white leading-[1.2]">
                 Deposite seu nome na urna no stand da Ticto
               </span>
-            </div>
+            </li>
 
             {/* Regra 3 */}
-            <div className="flex flex-row items-center gap-3.5 h-[26px]">
+            <li className="flex flex-row items-center gap-3.5 h-[26px]">
               <span className="font-space font-bold text-base text-[#1DC1DD] leading-[1.6] w-2 text-right">
                 3
               </span>
@@ -86,8 +86,8 @@ export function InfoSection() {
               <span className="font-space font-normal text-base text-white leading-[1.2]">
                 Aguarde o sorteio presencialmente no stand da Ticto
               </span>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
