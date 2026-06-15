@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroBg from "@/assets/hero-bg.png.asset.json";
+import { HeroBackground } from "@/components/HeroBackground";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -13,15 +13,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div
-      className="w-full"
-      style={{
-        aspectRatio: "1440 / 1543",
-        backgroundImage: `url(${heroBg.url})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    />
+    <section className="relative w-full overflow-hidden" style={{ minHeight: "100vh" }}>
+      <HeroBackground />
+    </section>
   );
 }
